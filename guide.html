@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process Scheduling Simulator | OSDS</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/6d94b2ae48.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/images/logo/favicon.ico"/>
+</head>
+<body>
+    <div id="sidebar"></div>
+    <header>
+        <img src="./images/logo/guide.png" alt="">
+        <h1>How To Use?</h1>
+    </header>
+    <div class="blackboard-back">
+        <div class="blackboard-front">
+            <div class="board-header">
+                <h2>1. Input Scheduling Data</h2>
+            </div>
+            <div class="input">
+                <p> > 프로세스 정보 (도착시간, WorkLoad), 코어 종류, 스케줄링 알고리즘 (RR이면, Time-Quantum도 입력!)을 입력한다.</p>
+                <p> > 프로세스의 개수는 99개, 코어의 개수는 15개까지 선택 가능하다.</p>
+                <p> > 프로세스 입력이 귀찮으면 Random 버튼을 누른 후, 프로세스의 개수, 도착시간과 WorkLoad의 범위를 누르고 OK!</p>
+                <img src="./images/guide/input.gif" alt="">
+            </div>
+            <div class="board-header">
+                <h2>2. Output</h2>
+            </div>
+            <div class="output">
+                <p> > 코어가 현재 작업중인 프로세스의 색상을 확인할 수 있다.</p>
+                <p> > Power Consumption은 코어의 현재 전력소모량을 의미한다.</p>
+                <p> > Total Power Consumption은 전체 코어의 현재 전력소모량을 의미한다.</p>
+                <p> > Ready Queue와 스케줄링 과정은 간트차트로 확인할 수 있다.</p>
+                <p> > 스케줄링 결과를 Scheduling Result에서 확인할 수 있고, 결과의 합계, NTT의 평균도 확인할 수 있다.</p>
+                <img src="./images/guide/output.gif" alt="">
+            </div>
+        </div>
+        <img src="./images/DS.png" id="Image">
+    </div>
+    <script src="/js/sidebar.js"></script>
+</body>
+</html>

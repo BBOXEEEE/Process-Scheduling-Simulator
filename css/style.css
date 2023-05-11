@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import "sidebar.css";
+@import "simulator.css";
+@import "algorithm.css";
+@import "guide.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+/* header*/
+header{
+    display: flex;
+    margin-left: 250px;
+    padding: 50px;
+    width: 90%;
+    font-size: 20px;
+    padding-bottom: 30px;
+    text-shadow: 0 15px 10px rgba(0, 0, 0, 0.2); 
+}
+header img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+body{
+    background: rgb(226, 226, 226);
+}
+table{
+    font-size: 15px;
+    border-collapse: collapse;
+}
+thead{
+    border-bottom: 2px solid #424242;
+}
+th, tr{
+    text-align: center;
+    width: 100px;
+    height: 35px;
+}

@@ -1,0 +1,324 @@
+/* input-container style */
+.input-container{
+    display: flex;
+    margin-left: 250px;
+    padding-left: 50px;
+    width: 1200px;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.container{
+    display: flex;
+    min-width: 300px;
+    margin: 10px;
+    background-color: #fff;
+    border: 2px dashed #424242;
+    border-radius: 20px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Process, core input box style */
+.process-input, .core-input{
+    max-width: 350px;
+    max-height: 300px;
+    overflow: auto;
+    margin: 10px;
+    border: 2px inset #424242;
+    border-radius: 20px;
+    padding: 10px;
+}
+#processInputTable input{
+    width: 50px;
+    border: 2px dotted #424242;
+    border-radius: 5px;
+    text-align: center;
+}
+#processInputTable td{
+    border-radius: 50px;
+}
+#coreInputTable td{
+    border-radius: 50px;
+}
+
+/* Schedule input box style */
+.schedule-input{
+    height: 200px;
+    margin: 10px;
+    border: 2px inset #424242;
+    border-radius: 20px;
+    padding: 10px;
+}
+.schedule-input label{
+    margin: 10px;
+    font-size: 15px;
+}
+.schedule-input input{
+    border: 2px solid #424242;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Random process generator pop-up style*/
+#popup{
+    display: none;
+    font-size: 15px;
+    margin: 5px;
+    border: 2px inset #424242;
+    border-radius: 10px;
+    padding: 5px;
+    align-items: center;
+}
+#popup h3{
+    font-size: 15px;
+    border-bottom: 2px solid #424242;
+}
+#popup label{
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+}
+#popup input{
+    text-align: center;
+    border: 1px solid #424242;
+    border-radius: 5px;
+}
+#popup button{
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+/* buttons style */
+.buttons{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 5px;
+}
+.buttons button{
+    background: transparent;
+    color: #424242;
+    font-weight: 600;
+    border: 2px solid #424242;
+    font-size: 13px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.buttons button:hover, #popup button:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.buttons #run:hover{
+    transform: scale(1.03);
+    color: red;
+    border: 2px solid rgba(255, 0, 0);
+}
+
+/* output-container style */
+.output-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+    padding-left: 50px;
+    width: 1200px;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+/* common style of output-container top, middle, bottom */
+.container-top,
+.container-middle,
+.container-bottom{
+    display: flex;
+    width: 1130px;
+    max-width: 1130px;
+    margin: 10px;
+    overflow-x: auto;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 2px dashed #424242;
+    border-radius: 20px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* ready-queue style */
+.ready-queue{
+    display: flex;
+    width: 850px;
+    max-width: 850px;
+    height: 80px;
+    margin: 10px;
+    overflow-x: auto;
+    background-color: #fff;
+    border: 2px solid #424242;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+#readyQueue {
+    display: flex;
+    justify-content: flex-start;
+    width: 800px;
+    max-width: 800px;
+    align-items: center;
+    padding-left: 10px;
+}
+.ready-queue-process{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+.ready-queue-process-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+/* power-consumption style */
+.power-consumption{
+    display: flex;
+    width: 250px;
+    height: 80px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #fff;
+    border: 2px solid #424242;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+.power-consumption #showConsumption{
+    margin-bottom: 15px;
+    padding: 30px;
+}
+.power-consumption img{
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+/* gantt-chart style */
+.gantt-chart{
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+    height: 400px;
+    overflow: auto;
+    margin: 10px;
+    background-color: #fff;
+    border: 2px solid #424242;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.gantt-chart-table{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.gantt-chart-core{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    margin-left: 20px;
+    padding-top: 10px;
+    transition: all 0.1s ease-in-out;
+}
+.gantt-chart-core div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.gantt-chart-core div div{
+    justify-content: center;
+}
+.gantt-chart-process{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.gantt-chart-process div{
+    display: flex;
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.gantt-chart-process div div{
+    justify-content: center;
+    border-radius: 5px;
+}
+.bg-gantt-chart-process{
+    background-color: #fff;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    overflow: hidden;
+}
+.bg-gantt-chart-process:hover{
+    opacity: 0.6;
+}
+@keyframes progress {
+    0%{
+        margin-left: 0%;
+        width: 100%;
+    }
+    100%{
+        margin-left: 110%;
+        width: 0%;
+    }
+}
+.gantt-chart-time-table{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    margin-left: 10px;
+    padding-left: 160px;
+    border-bottom: 3px solid #424242;
+}
+.gantt-chart-time-table div{
+    width: 60px;
+}
+
+/* result-table style*/
+.result-table{
+    display: flex;
+    width: 1100px;
+    height: 250px;
+    overflow: auto;
+    margin: 10px;
+    background-color: #fff;
+    border: 2px solid #424242;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* totalResult style */
+.result-table #totalResult{
+    font-weight: bold;
+    border-top: 2px solid #424242;
+}
+
+/* fieldset legend style */
+.ready-queue legend,
+.power-consumption legend,
+.gantt-chart legend,
+.result-table legend{
+    margin-left: 15px;
+}
+.power-consumption legend{
+    font-size: 16px;
+}

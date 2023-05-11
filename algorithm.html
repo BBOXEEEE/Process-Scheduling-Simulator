@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process Scheduling Simulator | OSDS</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/6d94b2ae48.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/images/logo/favicon.ico"/>
+</head>
+<body>
+    <div id="sidebar"></div>
+    <header>
+        <img src="./images/logo/algorithm.png" alt="">
+        <h1>Scheduling Algorithms</h1>
+    </header>
+    <section class="box">
+        <div class="card">
+            <img src="/images/algorithms_icon/FCFS.png" alt="">
+            <h3>First-Come-First-Service</h3>
+            <p>Non-preemptive Scheduling <br>
+                도착시간을 기준으로 먼저 도착한 프로세스를 먼저 처리</p>
+        </div>
+        <div class="card">
+            <img src="/images/algorithms_icon/RR.png" alt="">
+            <h3>Round-Robin</h3>
+            <p>Preemptive Scheduling <br>
+                도착시간을 기준으로 먼저 도착한 프로세스를 먼저 처리 <br>
+                하지만, 자원 사용 제한 시간(Time Quantum)이 있음</p>
+        </div>
+        <div class="card">
+            <img src="/images/algorithms_icon/SPN.png" alt="">
+            <h3>Shortest-Process-Next</h3>
+            <p>Non-preemptive Scheduling <br>
+                실행시간을 기준으로 WorkLoad가 <br>
+                가장 짧은 프로세스를 먼저 처리</p>
+        </div>
+        <div class="card">
+            <img src="/images/algorithms_icon/SRTN.png" alt="">
+            <h3>Shortes-Remaining-Time-Next</h3>
+            <p>Preemptive Scheduling <br>
+                잔여 WorkLoad가 더 짧은 프로세스가 <br>
+                Ready-Queue에 있으면 선점</p>
+        </div>
+        <div class="card">
+            <img src="/images/algorithms_icon/HRRN.png" alt="">
+            <h3>High-Response-Ratio-Next</h3>
+            <p>Non-preemptive Scheduling <br>
+                Aging Concepts를 적용한 SPN <br>
+                Response-Ratio (응답률) 이 높은 프로세스가 우선</p>
+        </div>
+        <div class="card">
+            <img src="/images/algorithms_icon/MN.png" alt="">
+            <h3>말년 병장 알고리즘</h3>
+            <p>Round-Robin을 변형 <br>
+                Time-Quantum 종료 시 남은 작업량이 <br>
+                총 작업량의 10% 이하일 경우 <br>
+                1번의 Time-Quantum을 더 부여해 추가 작업 기회를 줌</p>
+        </div>
+    </section>
+    <script src="js/sidebar.js"></script>
+</body>
+</html>

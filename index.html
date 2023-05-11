@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process Scheduling Simulator | OSDS</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://kit.fontawesome.com/6d94b2ae48.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/images/logo/favicon.ico"/>
+</head>
+<body>
+    <div class="header">
+        <a href="./index.html"><img src="images/home/koreatech.png"></a>
+        <h3></h3>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./simulator.html">Simulator</a></li>
+            <li><a href="./algorithm.html">Algorithm</a></li>
+            <li><a href="./guide.html">Guide</a></li>
+        </ul>
+    </div>
+    <div class="loading">
+        <h2>Loading...</h2>
+    </div>
+    <img src="/images/home/ds.png" alt="" class="ds">
+    <img src="/images/home/osdskim.png" alt="" class="osdskim">
+    <img src="/images/home/osdscho.png" alt="" class="osdscho">
+    <img src="/images/home/osdspark.png" alt="" class="osdspark">
+    <img src="/images/home/osdsoh.png" alt="" class="osdsoh">
+    <img src="/images/home/make.png" alt="" class="make">
+    <div class="title">
+        <h3 class="title-text">PROCESS SCHEDULING SIMULATOR</h3>
+        <div class="buttons">
+            <button type="button" onclick="location.href='./simulator.html'">START NOW</button>
+        </div>
+    </div>
+
+    <script>
+        const text = document.querySelector('.loading');
+        text.addEventListener('animationend', () => {
+            text.textContent = '';
+        });
+        let opacity = 1;
+        setTimeout(() => {
+            document.querySelector(".title-text").style.opacity = opacity;
+            document.querySelector(".buttons").style.opacity = opacity;
+        }, 6000);
+    </script>
+</body>
+</html>
