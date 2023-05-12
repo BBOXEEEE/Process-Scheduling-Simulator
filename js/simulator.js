@@ -127,6 +127,10 @@ function deleteCore() {
 }
 // =============== 화면 Clear ===============
 function resetAll() {
+    if(isRunning){
+        alert("Error: 현재 실행중! 실행 종료 후 다시 실행해주세요.");
+        return;
+    }
     // 프로세스 입력창 삭제
     const processTable = document.getElementById("processInputTable");
     for(let i=1; i<processCount; i++){
@@ -210,7 +214,6 @@ function resetAll() {
 let isRunning = false;
 function run() {
     // =============== 중복실행 방지 ===============
-    console.log(isRunning);
     if(isRunning){
         alert("Error: 현재 실행중! 실행 종료 후 다시 실행해주세요.");
         return;
@@ -347,10 +350,6 @@ function run() {
 function showData(data, processors){
     isRunning = true;
     let statuses = data.statuses;
-    console.log(statuses);
-    console.log(statuses[0].pairs[0].processName);
-    console.log(statuses[1].pairs[0].processName);
-    console.log(statuses[0].pairs[0].processName === statuses[1].pairs[0].processName);
 
     // =============== 간트차트 생성 ===============
     // 간트차트 왼쪽에 프로세서 영역 생성
@@ -563,7 +562,11 @@ function showData(data, processors){
             clearInterval(timer); // 타이머 정지
         }
     }, 350);
-    timer = setInterval(function() {
-        background.style.animation = "progress "+((endTime-1)/2.6)+"s linear 1 both";
+    let j = 0;
+    const timer2 = setInterval(function() {
+        if(j<statuses.length)
+            background.style.animation = "progress "+((endTime-1)/2.6)+"s linear 1 both";
+        else
+            clearInterval(timer2);
     }, 500);
 }
